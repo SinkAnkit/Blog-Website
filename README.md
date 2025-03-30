@@ -26,22 +26,29 @@
 git clone https://github.com/your-username/blog-api.git
 cd blog-api
 
-2️⃣ Install dependencies:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditnpm install   `
+```
+### 2️⃣ Install dependencies:
+```bash
+npm install
+```
 
-3️⃣ Start the server:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditnode index.js   `
+### 3️⃣ Start the server:
+```bash
+node index.js
+```
 
-Server runs at **http://localhost:4000** 🚀
+###Server runs at http://localhost:4000 
 
-🛠 API Endpoints
-----------------
+##API Endpoints
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| GET | `/posts` | Fetch all blog posts |
+| GET | `/posts/:id` | Fetch a specific post by ID |
+| POST | `/posts` | Create a new blog post |
+| PATCH | `/posts/:id` | Update a post's title, content, or author |
+| DELETE | `/posts/:id` | Remove a post |
 
-MethodEndpointDescriptionGET/postsFetch all blog postsGET/posts/:idFetch a specific post by IDPOST/postsCreate a new blog postPATCH/posts/:idUpdate a post's title, content, or authorDELETE/posts/:idRemove a post
 
-📝 Example Blog Post JSON
--------------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   jsonCopyEdit{    "title": "New Innovations in AI",    "content": "Artificial Intelligence is evolving rapidly...",    "author": "John Doe"  }   `
